@@ -3,8 +3,10 @@
   vars_prompt:
   - name: COURSE
     prompt: please enther the course name
+    private: false # not confidential
   - name: NAME
-    prompt: please enther the name 
+    prompt: please enther the name
+    private: false # not confidential 
   tasks:
   - name: print the course information 
     ansible.builtin.debug:
