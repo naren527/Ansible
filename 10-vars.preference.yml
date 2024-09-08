@@ -1,0 +1,19 @@
+- name: variables to print
+  hosts: web
+  vars:
+    NAME: "narendra"
+    COURSE: "aws devops with play level"
+  vars_prompt:
+  - name: COURSE
+    prompt: please enther the course name
+    private: false # not confidential
+  - name: NAME
+    prompt: please enther the name
+    private: false # not confidential 
+  tasks:
+  - name: print the message
+    vars:
+      NAME: "narendra"
+      COURSE: "aws devops from task level"
+    ansible.builtin.debug:
+      msg: "Hi, this is {{NAME}}, learing {{COURSE}}"
