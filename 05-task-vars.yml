@@ -10,7 +10,7 @@
 
 
   - name: print the message again
-    vars: # task level variables
+    vars: # task level variables overide play level variables
       COURSE: "Ansible"
     ansible.builtin.debug:
       msg: "Hi, this is {{NAME}}, learing {{COURSE}}"
