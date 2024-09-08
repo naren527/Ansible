@@ -3,6 +3,8 @@
   vars:
     NAME: "narendra"
     COURSE: "aws devops with play level"
+  vars_files:
+  - vars.yml
   vars_prompt:
   - name: COURSE
     prompt: please enther the course name
