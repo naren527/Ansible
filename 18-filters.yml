@@ -18,3 +18,9 @@
     ansible.builtin.debug:
       msg: "{{ greeting | lower }}"
 
+  - name: convert to lower case
+    vars:
+      numbers: [1,2,3,10,1,2]
+    ansible.builtin.debug:
+      msg: "{{ numbers | unique }}"
+
