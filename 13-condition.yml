@@ -14,4 +14,4 @@
 
   - name: craete a user
     ansible.builtin.command: id expense
-    when: USER.rc != 0s
+    when: USER.rc !=0
