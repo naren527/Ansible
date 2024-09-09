@@ -1,5 +1,6 @@
 - name: devops course information
   hosts: local
+  connection: local # for localhost connection, it won't check username & pwd
   vars:
     course: aws with devops # string 
     duration: 120 # number
